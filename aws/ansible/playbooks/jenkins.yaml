@@ -1,0 +1,10 @@
+---
+- hosts: master 
+  remote_user: ubuntu
+  become: true
+  vars:
+    def_container_name: docker
+    def_container_image: ubuntu
+    def_container_command: sleep 1d
+  tasks:
+    - name: install dependencies

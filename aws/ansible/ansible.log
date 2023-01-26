@@ -1260,3 +1260,260 @@ ubuntu   pts/0    176.241.159.43   20:46    0.00s  0.15s  0.00s /bin/sh -c w
 2023-01-26 20:59:45,908 p=32209 u=serg n=ansible | ip-172-31-49-165.ec2.internal : ok=10   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2023-01-26 20:59:45,908 p=32209 u=serg n=ansible | ip-172-31-56-255.ec2.internal : ok=10   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2023-01-26 20:59:45,908 p=32209 u=serg n=ansible | ip-172-31-61-142.ec2.internal : ok=10   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-01-26 21:26:28,509 p=38676 u=serg n=ansible | PLAY [all] ************************************************************************************************************************************************************
+2023-01-26 21:26:28,519 p=38676 u=serg n=ansible | TASK [Gathering Facts] ************************************************************************************************************************************************
+2023-01-26 21:26:35,390 p=38676 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:26:35,439 p=38676 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:26:35,451 p=38676 u=serg n=ansible | TASK [install dependencies] *******************************************************************************************************************************************
+2023-01-26 21:26:40,414 p=38676 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=apt-transport-https)
+2023-01-26 21:26:40,431 p=38676 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=apt-transport-https)
+2023-01-26 21:26:45,200 p=38676 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=ca-certificates)
+2023-01-26 21:26:45,252 p=38676 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=ca-certificates)
+2023-01-26 21:26:49,989 p=38676 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=curl)
+2023-01-26 21:26:50,039 p=38676 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=curl)
+2023-01-26 21:26:54,782 p=38676 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=gnupg-agent)
+2023-01-26 21:26:54,808 p=38676 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=gnupg-agent)
+2023-01-26 21:26:59,580 p=38676 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=software-properties-common)
+2023-01-26 21:26:59,587 p=38676 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=software-properties-common)
+2023-01-26 21:26:59,593 p=38676 u=serg n=ansible | TASK [add GPG key] ****************************************************************************************************************************************************
+2023-01-26 21:27:03,266 p=38676 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:27:03,302 p=38676 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:27:03,309 p=38676 u=serg n=ansible | TASK [add docker repository to apt] ***********************************************************************************************************************************
+2023-01-26 21:27:06,611 p=38676 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:27:06,612 p=38676 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:27:06,619 p=38676 u=serg n=ansible | TASK [install docker] *************************************************************************************************************************************************
+2023-01-26 21:27:11,148 p=38676 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=docker-ce)
+2023-01-26 21:27:11,212 p=38676 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=docker-ce)
+2023-01-26 21:27:15,965 p=38676 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=docker-ce-cli)
+2023-01-26 21:27:16,038 p=38676 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=docker-ce-cli)
+2023-01-26 21:27:20,751 p=38676 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=containerd.io)
+2023-01-26 21:27:20,842 p=38676 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=containerd.io)
+2023-01-26 21:27:20,849 p=38676 u=serg n=ansible | TASK [check docker is active] *****************************************************************************************************************************************
+2023-01-26 21:27:24,602 p=38676 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:27:24,602 p=38676 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:27:24,608 p=38676 u=serg n=ansible | TASK [Ensure group "docker" exists] ***********************************************************************************************************************************
+2023-01-26 21:27:27,549 p=38676 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:27:27,549 p=38676 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:27:27,556 p=38676 u=serg n=ansible | TASK [adding ubuntu to docker group] **********************************************************************************************************************************
+2023-01-26 21:27:30,574 p=38676 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:27:30,577 p=38676 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:27:30,584 p=38676 u=serg n=ansible | TASK [Install docker-compose] *****************************************************************************************************************************************
+2023-01-26 21:27:33,958 p=38676 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:27:33,964 p=38676 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:27:33,971 p=38676 u=serg n=ansible | TASK [Change file ownership, group and permissions] *******************************************************************************************************************
+2023-01-26 21:27:36,930 p=38676 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:27:36,933 p=38676 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:27:36,940 p=38676 u=serg n=ansible | TASK [Pull default Docker image] **************************************************************************************************************************************
+2023-01-26 21:27:40,011 p=38676 u=serg n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ModuleNotFoundError: No module named 'docker'
+2023-01-26 21:27:40,012 p=38676 u=serg n=ansible | fatal: [ip-172-31-56-255.ec2.internal]: FAILED! => {"changed": false, "msg": "Failed to import the required Python library (Docker SDK for Python: docker above 5.0.0 (Python >= 3.6) or docker before 5.0.0 (Python 2.7) or docker-py (Python 2.6)) on ip-172-31-56-255's Python /usr/bin/python3. Please read the module documentation and install it in the appropriate location. If the required library is installed, but Ansible is using the wrong Python interpreter, please consult the documentation on ansible_python_interpreter, for example via `pip install docker` (Python >= 3.6) or `pip install docker==4.4.4` (Python 2.7) or `pip install docker-py` (Python 2.6). The error was: No module named 'docker'"}
+2023-01-26 21:27:40,043 p=38676 u=serg n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ModuleNotFoundError: No module named 'docker'
+2023-01-26 21:27:40,044 p=38676 u=serg n=ansible | fatal: [ip-172-31-49-165.ec2.internal]: FAILED! => {"changed": false, "msg": "Failed to import the required Python library (Docker SDK for Python: docker above 5.0.0 (Python >= 3.6) or docker before 5.0.0 (Python 2.7) or docker-py (Python 2.6)) on ip-172-31-49-165's Python /usr/bin/python3. Please read the module documentation and install it in the appropriate location. If the required library is installed, but Ansible is using the wrong Python interpreter, please consult the documentation on ansible_python_interpreter, for example via `pip install docker` (Python >= 3.6) or `pip install docker==4.4.4` (Python 2.7) or `pip install docker-py` (Python 2.6). The error was: No module named 'docker'"}
+2023-01-26 21:27:40,045 p=38676 u=serg n=ansible | PLAY RECAP ************************************************************************************************************************************************************
+2023-01-26 21:27:40,045 p=38676 u=serg n=ansible | ip-172-31-49-165.ec2.internal : ok=10   changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-01-26 21:27:40,045 p=38676 u=serg n=ansible | ip-172-31-56-255.ec2.internal : ok=10   changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-01-26 21:31:55,363 p=40486 u=serg n=ansible | PLAY [all] ************************************************************************************************************************************************************
+2023-01-26 21:31:55,370 p=40486 u=serg n=ansible | TASK [Gathering Facts] ************************************************************************************************************************************************
+2023-01-26 21:32:02,173 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:32:02,215 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:32:02,226 p=40486 u=serg n=ansible | TASK [install dependencies] *******************************************************************************************************************************************
+2023-01-26 21:32:07,169 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=apt-transport-https)
+2023-01-26 21:32:07,257 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=apt-transport-https)
+2023-01-26 21:32:11,962 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=ca-certificates)
+2023-01-26 21:32:12,109 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=ca-certificates)
+2023-01-26 21:32:16,762 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=curl)
+2023-01-26 21:32:17,239 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=curl)
+2023-01-26 21:32:21,537 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=gnupg-agent)
+2023-01-26 21:32:22,132 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=gnupg-agent)
+2023-01-26 21:32:26,303 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=software-properties-common)
+2023-01-26 21:32:26,962 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=software-properties-common)
+2023-01-26 21:32:52,016 p=40486 u=serg n=ansible | changed: [ip-172-31-49-165.ec2.internal] => (item=python3-pip)
+2023-01-26 21:32:55,607 p=40486 u=serg n=ansible | changed: [ip-172-31-56-255.ec2.internal] => (item=python3-pip)
+2023-01-26 21:33:02,238 p=40486 u=serg n=ansible | changed: [ip-172-31-49-165.ec2.internal] => (item=virtualenv)
+2023-01-26 21:33:05,572 p=40486 u=serg n=ansible | changed: [ip-172-31-56-255.ec2.internal] => (item=virtualenv)
+2023-01-26 21:33:07,093 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=python3-setuptools)
+2023-01-26 21:33:10,458 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=python3-setuptools)
+2023-01-26 21:33:10,467 p=40486 u=serg n=ansible | TASK [add GPG key] ****************************************************************************************************************************************************
+2023-01-26 21:33:14,151 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:33:14,156 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:33:14,162 p=40486 u=serg n=ansible | TASK [add docker repository to apt] ***********************************************************************************************************************************
+2023-01-26 21:33:17,487 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:33:17,606 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:33:17,612 p=40486 u=serg n=ansible | TASK [install docker] *************************************************************************************************************************************************
+2023-01-26 21:33:22,208 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=docker-ce)
+2023-01-26 21:33:22,209 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=docker-ce)
+2023-01-26 21:33:27,018 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=docker-ce-cli)
+2023-01-26 21:33:27,057 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=docker-ce-cli)
+2023-01-26 21:33:31,920 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal] => (item=containerd.io)
+2023-01-26 21:33:31,929 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal] => (item=containerd.io)
+2023-01-26 21:33:31,937 p=40486 u=serg n=ansible | TASK [check docker is active] *****************************************************************************************************************************************
+2023-01-26 21:33:35,725 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:33:35,751 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:33:35,756 p=40486 u=serg n=ansible | TASK [Ensure group "docker" exists] ***********************************************************************************************************************************
+2023-01-26 21:33:38,670 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:33:38,713 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:33:38,719 p=40486 u=serg n=ansible | TASK [adding ubuntu to docker group] **********************************************************************************************************************************
+2023-01-26 21:33:41,776 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:33:41,785 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:33:41,793 p=40486 u=serg n=ansible | TASK [Install docker-compose] *****************************************************************************************************************************************
+2023-01-26 21:33:45,170 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:33:45,182 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:33:45,189 p=40486 u=serg n=ansible | TASK [Change file ownership, group and permissions] *******************************************************************************************************************
+2023-01-26 21:33:48,143 p=40486 u=serg n=ansible | ok: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:33:48,147 p=40486 u=serg n=ansible | ok: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:33:48,154 p=40486 u=serg n=ansible | TASK [Install Docker Module for Python] *******************************************************************************************************************************
+2023-01-26 21:33:53,396 p=40486 u=serg n=ansible | changed: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:33:53,827 p=40486 u=serg n=ansible | changed: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:33:53,834 p=40486 u=serg n=ansible | TASK [Pull default Docker image] **************************************************************************************************************************************
+2023-01-26 21:34:00,985 p=40486 u=serg n=ansible | changed: [ip-172-31-49-165.ec2.internal]
+2023-01-26 21:34:01,107 p=40486 u=serg n=ansible | changed: [ip-172-31-56-255.ec2.internal]
+2023-01-26 21:34:01,114 p=40486 u=serg n=ansible | TASK [Create default containers] **************************************************************************************************************************************
+2023-01-26 21:34:05,155 p=40486 u=serg n=ansible | changed: [ip-172-31-49-165.ec2.internal] => (item=1)
+2023-01-26 21:34:05,181 p=40486 u=serg n=ansible | changed: [ip-172-31-56-255.ec2.internal] => (item=1)
+2023-01-26 21:34:08,493 p=40486 u=serg n=ansible | changed: [ip-172-31-49-165.ec2.internal] => (item=2)
+2023-01-26 21:34:08,638 p=40486 u=serg n=ansible | changed: [ip-172-31-56-255.ec2.internal] => (item=2)
+2023-01-26 21:34:08,652 p=40486 u=serg n=ansible | PLAY RECAP ************************************************************************************************************************************************************
+2023-01-26 21:34:08,652 p=40486 u=serg n=ansible | ip-172-31-49-165.ec2.internal : ok=13   changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-01-26 21:34:08,652 p=40486 u=serg n=ansible | ip-172-31-56-255.ec2.internal : ok=13   changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-01-26 21:34:29,656 p=42099 u=serg n=ansible | ip-172-31-49-165.ec2.internal | CHANGED | rc=0 >>
+CONTAINER ID   IMAGE     COMMAND      CREATED          STATUS    PORTS     NAMES
+52ec3ad22afb   ubuntu    "sleep 1d"   21 seconds ago   Created             docker2
+c5aa4e964d8f   ubuntu    "sleep 1d"   25 seconds ago   Created             docker1
+
+2023-01-26 21:34:29,734 p=42099 u=serg n=ansible | ip-172-31-56-255.ec2.internal | CHANGED | rc=0 >>
+CONTAINER ID   IMAGE     COMMAND      CREATED          STATUS    PORTS     NAMES
+6d9922dc5c66   ubuntu    "sleep 1d"   21 seconds ago   Created             docker2
+b87e21f0ae71   ubuntu    "sleep 1d"   25 seconds ago   Created             docker1
+
+2023-01-26 21:34:30,921 p=42099 u=serg n=ansible | ip-172-31-61-142.ec2.internal | CHANGED | rc=0 >>
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+2023-01-26 21:36:07,271 p=42593 u=serg n=ansible | ip-172-31-61-142.ec2.internal | FAILED | rc=1 >>
+"docker stop" requires at least 1 argument.
+See 'docker stop --help'.
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+Stop one or more running containersnon-zero return code
+
+2023-01-26 21:36:07,307 p=42593 u=serg n=ansible | ip-172-31-56-255.ec2.internal | FAILED | rc=1 >>
+"docker stop" requires at least 1 argument.
+See 'docker stop --help'.
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+Stop one or more running containersnon-zero return code
+
+2023-01-26 21:36:07,564 p=42593 u=serg n=ansible | ip-172-31-49-165.ec2.internal | FAILED | rc=1 >>
+"docker stop" requires at least 1 argument.
+See 'docker stop --help'.
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+Stop one or more running containersnon-zero return code
+
+2023-01-26 21:37:04,887 p=42995 u=serg n=ansible | ip-172-31-61-142.ec2.internal | FAILED | rc=1 >>
+"docker stop" requires at least 1 argument.
+See 'docker stop --help'.
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+Stop one or more running containersnon-zero return code
+
+2023-01-26 21:37:04,898 p=42995 u=serg n=ansible | ip-172-31-56-255.ec2.internal | FAILED | rc=1 >>
+"docker stop" requires at least 1 argument.
+See 'docker stop --help'.
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+Stop one or more running containersnon-zero return code
+
+2023-01-26 21:37:04,957 p=42995 u=serg n=ansible | ip-172-31-49-165.ec2.internal | FAILED | rc=1 >>
+"docker stop" requires at least 1 argument.
+See 'docker stop --help'.
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+Stop one or more running containersnon-zero return code
+
+2023-01-26 21:37:36,560 p=43248 u=serg n=ansible | ip-172-31-61-142.ec2.internal | CHANGED | rc=0 >>
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+2023-01-26 21:37:36,560 p=43248 u=serg n=ansible | ip-172-31-56-255.ec2.internal | CHANGED | rc=0 >>
+CONTAINER ID   IMAGE     COMMAND      CREATED         STATUS    PORTS     NAMES
+6d9922dc5c66   ubuntu    "sleep 1d"   3 minutes ago   Created             docker2
+b87e21f0ae71   ubuntu    "sleep 1d"   3 minutes ago   Created             docker1
+
+2023-01-26 21:37:36,627 p=43248 u=serg n=ansible | ip-172-31-49-165.ec2.internal | CHANGED | rc=0 >>
+CONTAINER ID   IMAGE     COMMAND      CREATED         STATUS    PORTS     NAMES
+52ec3ad22afb   ubuntu    "sleep 1d"   3 minutes ago   Created             docker2
+c5aa4e964d8f   ubuntu    "sleep 1d"   3 minutes ago   Created             docker1
+
+2023-01-26 21:38:04,284 p=43476 u=serg n=ansible | ip-172-31-61-142.ec2.internal | FAILED | rc=1 >>
+Error response from daemon: No such container: docker*non-zero return code
+
+2023-01-26 21:38:04,288 p=43476 u=serg n=ansible | ip-172-31-56-255.ec2.internal | FAILED | rc=1 >>
+Error response from daemon: No such container: docker*non-zero return code
+
+2023-01-26 21:38:04,344 p=43476 u=serg n=ansible | ip-172-31-49-165.ec2.internal | FAILED | rc=1 >>
+Error response from daemon: No such container: docker*non-zero return code
+
+2023-01-26 21:38:15,680 p=43610 u=serg n=ansible | ip-172-31-61-142.ec2.internal | FAILED | rc=1 >>
+Error response from daemon: No such container: docker1non-zero return code
+
+2023-01-26 21:38:15,696 p=43610 u=serg n=ansible | ip-172-31-49-165.ec2.internal | CHANGED | rc=0 >>
+docker1
+
+2023-01-26 21:38:15,700 p=43610 u=serg n=ansible | ip-172-31-56-255.ec2.internal | CHANGED | rc=0 >>
+docker1
+
+2023-01-26 21:38:25,971 p=43757 u=serg n=ansible | ip-172-31-56-255.ec2.internal | CHANGED | rc=0 >>
+docker2
+
+2023-01-26 21:38:26,019 p=43757 u=serg n=ansible | ip-172-31-49-165.ec2.internal | CHANGED | rc=0 >>
+docker2
+
+2023-01-26 21:38:26,070 p=43757 u=serg n=ansible | ip-172-31-61-142.ec2.internal | FAILED | rc=1 >>
+Error response from daemon: No such container: docker2non-zero return code
+
+2023-01-26 21:38:38,417 p=43927 u=serg n=ansible | ip-172-31-61-142.ec2.internal | CHANGED | rc=0 >>
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+2023-01-26 21:38:38,417 p=43927 u=serg n=ansible | ip-172-31-56-255.ec2.internal | CHANGED | rc=0 >>
+CONTAINER ID   IMAGE     COMMAND      CREATED         STATUS    PORTS     NAMES
+6d9922dc5c66   ubuntu    "sleep 1d"   4 minutes ago   Created             docker2
+b87e21f0ae71   ubuntu    "sleep 1d"   4 minutes ago   Created             docker1
+
+2023-01-26 21:38:38,470 p=43927 u=serg n=ansible | ip-172-31-49-165.ec2.internal | CHANGED | rc=0 >>
+CONTAINER ID   IMAGE     COMMAND      CREATED         STATUS    PORTS     NAMES
+52ec3ad22afb   ubuntu    "sleep 1d"   4 minutes ago   Created             docker2
+c5aa4e964d8f   ubuntu    "sleep 1d"   4 minutes ago   Created             docker1
+
+2023-01-26 21:39:59,727 p=44314 u=serg n=ansible | ip-172-31-61-142.ec2.internal | CHANGED | rc=0 >>
+Total reclaimed space: 0B
+
+2023-01-26 21:39:59,875 p=44314 u=serg n=ansible | ip-172-31-56-255.ec2.internal | CHANGED | rc=0 >>
+Deleted Containers:
+6d9922dc5c660454349b24381853665c17b6755f4e23658113a8190fb5b35312
+b87e21f0ae71f8779dddab4818018af03297ea8f4d75f92d7fe60e5bd76a0fd5
+
+Deleted Images:
+untagged: ubuntu:latest
+untagged: ubuntu@sha256:27cb6e6ccef575a4698b66f5de06c7ecd61589132d5a91d098f7f3f9285415a9
+deleted: sha256:6b7dfa7e8fdbe18ad425dd965a1049d984f31cf0ad57fa6d5377cca355e65f03
+deleted: sha256:6515074984c6f8bb1b8a9962c8fb5f310fc85e70b04c88442a3939c026dbfad3
+
+Total reclaimed space: 77.8MB
+
+2023-01-26 21:39:59,941 p=44314 u=serg n=ansible | ip-172-31-49-165.ec2.internal | CHANGED | rc=0 >>
+Deleted Containers:
+52ec3ad22afb9aeb39759f961577bc0d7a92419b42151e32121011d6166302ac
+c5aa4e964d8f53cc11c1e69c5e74cf0da7fbf10fcd94e2794114523a85f27901
+
+Deleted Images:
+untagged: ubuntu:latest
+untagged: ubuntu@sha256:27cb6e6ccef575a4698b66f5de06c7ecd61589132d5a91d098f7f3f9285415a9
+deleted: sha256:6b7dfa7e8fdbe18ad425dd965a1049d984f31cf0ad57fa6d5377cca355e65f03
+deleted: sha256:6515074984c6f8bb1b8a9962c8fb5f310fc85e70b04c88442a3939c026dbfad3
+
+Total reclaimed space: 77.8MB
+
