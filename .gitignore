@@ -1,4 +1,4 @@
 .gitignore
 mikrotik.md
 mikrotik/
-.ssh/
+aws/ansible/.ssh/serg-aws-wj8j7j.pem
