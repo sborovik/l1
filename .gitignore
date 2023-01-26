@@ -1,0 +1,4 @@
+.gitignore
+mikrotik.md
+mikrotik/
+.ssh/

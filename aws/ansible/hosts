@@ -1,0 +1,11 @@
+[job]
+ip-172-31-50-175.ec2.internal	ansible_host=3.85.141.13	ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/serg-aws-wj8j7j.pem
+ip-172-31-56-255.ec2.internal	ansible_host=54.237.226.38	ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/serg-aws-wj8j7j.pem
+
+[master]
+ip-172-31-61-142.ec2.internal	ansible_host=52.90.23.4		ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/serg-aws-wj8j7j.pem
+
+[aws:children]
+master
+job
+
