@@ -1517,3 +1517,81 @@ deleted: sha256:6515074984c6f8bb1b8a9962c8fb5f310fc85e70b04c88442a3939c026dbfad3
 
 Total reclaimed space: 77.8MB
 
+2023-01-27 10:44:32,004 p=156255 u=serg n=ansible | ip-172-31-56-255.ec2.internal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '54.237.226.38' (ED25519) to the list of known hosts.\r\nReceived disconnect from 54.237.226.38 port 22:2: Too many authentication failures\r\nDisconnected from 54.237.226.38 port 22",
+    "unreachable": true
+}
+2023-01-27 10:44:32,032 p=156255 u=serg n=ansible | ip-172-31-61-142.ec2.internal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '52.90.23.4' (ED25519) to the list of known hosts.\r\nReceived disconnect from 52.90.23.4 port 22:2: Too many authentication failures\r\nDisconnected from 52.90.23.4 port 22",
+    "unreachable": true
+}
+2023-01-27 10:44:32,176 p=156255 u=serg n=ansible | ip-172-31-49-165.ec2.internal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '100.25.155.124' (ED25519) to the list of known hosts.\r\nReceived disconnect from 100.25.155.124 port 22:2: Too many authentication failures\r\nDisconnected from 100.25.155.124 port 22",
+    "unreachable": true
+}
+2023-01-27 10:53:25,830 p=157375 u=serg n=ansible | ip-172-31-61-142.ec2.internal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Received disconnect from 52.90.23.4 port 22:2: Too many authentication failures\r\nDisconnected from 52.90.23.4 port 22",
+    "unreachable": true
+}
+2023-01-27 10:53:25,926 p=157375 u=serg n=ansible | ip-172-31-49-165.ec2.internal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Received disconnect from 100.25.155.124 port 22:2: Too many authentication failures\r\nDisconnected from 100.25.155.124 port 22",
+    "unreachable": true
+}
+2023-01-27 10:53:25,990 p=157375 u=serg n=ansible | ip-172-31-56-255.ec2.internal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Received disconnect from 54.237.226.38 port 22:2: Too many authentication failures\r\nDisconnected from 54.237.226.38 port 22",
+    "unreachable": true
+}
+2023-01-27 11:01:34,944 p=158972 u=serg n=ansible | ip-172-31-61-142.ec2.internal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Received disconnect from 52.90.23.4 port 22:2: Too many authentication failures\r\nDisconnected from 52.90.23.4 port 22",
+    "unreachable": true
+}
+2023-01-27 11:01:34,972 p=158972 u=serg n=ansible | ip-172-31-56-255.ec2.internal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Received disconnect from 54.237.226.38 port 22:2: Too many authentication failures\r\nDisconnected from 54.237.226.38 port 22",
+    "unreachable": true
+}
+2023-01-27 11:01:35,035 p=158972 u=serg n=ansible | ip-172-31-49-165.ec2.internal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Received disconnect from 100.25.155.124 port 22:2: Too many authentication failures\r\nDisconnected from 100.25.155.124 port 22",
+    "unreachable": true
+}
+2023-01-27 11:04:12,245 p=159279 u=serg n=ansible | ip-172-31-61-142.ec2.internal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Received disconnect from 52.90.23.4 port 22:2: Too many authentication failures\r\nDisconnected from 52.90.23.4 port 22",
+    "unreachable": true
+}
+2023-01-27 11:24:46,720 p=162587 u=serg n=ansible | ip-172-31-61-142.ec2.internal | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-01-27 11:24:56,426 p=162631 u=serg n=ansible | ip-172-31-61-142.ec2.internal | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-01-27 11:24:57,915 p=162631 u=serg n=ansible | ip-172-31-56-255.ec2.internal | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-01-27 11:24:58,558 p=162631 u=serg n=ansible | ip-172-31-49-165.ec2.internal | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
