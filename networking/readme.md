@@ -1,6 +1,6 @@
 Network architecture 
 
-![](images/image5.png) 
+![](images/you_name_it.webp)
 
 1\. На Server\_1 налаштувати статичні адреси на всіх інтерфейсах
 
