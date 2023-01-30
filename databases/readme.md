@@ -30,7 +30,11 @@ PART 2
 12. Restore your database. 
     1. [restore to new db](images/image-16.png)
 13. Transfer your local database to RDS AWS 
+    1. [transfer to RDS](images/image-18.png)
 14. Connect to your database 
+    1. [connect to RDS db](images/image-18.png)
 15. Execute SELECT operator similar step 6 
+    1. [select order by](images/image-19.png)
 16. Create the dump of your database 
+    1. [dump db from RDS ](images/image-20.png)
 
