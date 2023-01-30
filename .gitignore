@@ -4,3 +4,4 @@ mikrotik/
 aws/ansible/.ssh/serg-aws-wj8j7j.pem
 tmp/
 l1.code-workspace
+.vscode/

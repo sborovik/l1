@@ -1,0 +1,62 @@
+2023/01/30 11:13:56 [791198] building file list
+2023/01/30 11:13:56 [791198] done
+2023/01/30 11:13:56 [791198] .d..t...... .git/objects/
+2023/01/30 11:13:56 [791198] .d..t...... linux-and-bash/
+2023/01/30 11:13:56 [791198] >fcst...... linux-and-bash/c-backup-2023-Jan-30.log
+2023/01/30 11:13:56 [791198] sent 10,005 bytes  received 43 bytes  20,096.00 bytes/sec
+2023/01/30 11:13:56 [791198] total size is 9,817,639  speedup is 977.07
+2023/01/30 11:14:16 [791358] building file list
+2023/01/30 11:14:16 [791358] done
+2023/01/30 11:14:16 [791358] .d..t...... ./
+2023/01/30 11:14:16 [791358] cd+++++++++ linux-and-bash/
+2023/01/30 11:14:16 [791358] >f+++++++++ linux-and-bash/a-ip-info.sh
+2023/01/30 11:14:16 [791358] >f+++++++++ linux-and-bash/apache_logs.txt
+2023/01/30 11:14:16 [791358] >f+++++++++ linux-and-bash/b-analyzer-apache-log.sh
+2023/01/30 11:14:16 [791358] >f+++++++++ linux-and-bash/b-analyzer-results.txt
+2023/01/30 11:14:16 [791358] >f+++++++++ linux-and-bash/c-backup-2023-Jan-30.log
+2023/01/30 11:14:16 [791358] >f+++++++++ linux-and-bash/c-backup-script.sh
+2023/01/30 11:14:16 [791358] >f+++++++++ linux-and-bash/example_log.log
+2023/01/30 11:14:16 [791358] >f+++++++++ linux-and-bash/readme.md
+2023/01/30 11:14:16 [791358] cd+++++++++ linux-and-bash/images/
+2023/01/30 11:14:16 [791358] >f+++++++++ linux-and-bash/images/image-a.1.png
+2023/01/30 11:14:16 [791358] >f+++++++++ linux-and-bash/images/image-a.2.png
+2023/01/30 11:14:16 [791358] >f+++++++++ linux-and-bash/images/image-b.1.png
+2023/01/30 11:14:16 [791358] >f+++++++++ linux-and-bash/images/image-b.2.png
+2023/01/30 11:14:16 [791358] sent 465,726 bytes  received 256 bytes  931,964.00 bytes/sec
+2023/01/30 11:14:16 [791358] total size is 9,818,073  speedup is 21.07
+2023/01/30 11:39:11 [804367] building file list
+2023/01/30 11:39:11 [804367] done
+2023/01/30 11:39:11 [804367] >fcst...... .gitignore
+2023/01/30 11:39:11 [804367] .d..t...... .git/
+2023/01/30 11:39:11 [804367] >fcst...... .git/index
+2023/01/30 11:39:11 [804367] .d..t...... .git/objects/
+2023/01/30 11:39:11 [804367] cd+++++++++ .git/objects/1f/
+2023/01/30 11:39:11 [804367] >f+++++++++ .git/objects/1f/234591e76c6e8d430d6822ff72e85e6d2ae09d
+2023/01/30 11:39:11 [804367] cd+++++++++ .git/objects/22/
+2023/01/30 11:39:11 [804367] >f+++++++++ .git/objects/22/df57e69691aa358a95f59aa840b3310a91eaed
+2023/01/30 11:39:11 [804367] .d..t...... .git/objects/5a/
+2023/01/30 11:39:11 [804367] >f+++++++++ .git/objects/5a/79e2bdc0b84748bdd3ee01fa09503245044398
+2023/01/30 11:39:11 [804367] cd+++++++++ .git/objects/6c/
+2023/01/30 11:39:11 [804367] >f+++++++++ .git/objects/6c/4281c4fd7b3318b00612f576b283e6fd501b33
+2023/01/30 11:39:11 [804367] cd+++++++++ .git/objects/87/
+2023/01/30 11:39:11 [804367] >f+++++++++ .git/objects/87/cfd5e9636ab37186517442451bc251d3906b7c
+2023/01/30 11:39:11 [804367] cd+++++++++ .git/objects/8f/
+2023/01/30 11:39:11 [804367] >f+++++++++ .git/objects/8f/96cc37dee7f53e361aca512e0a225c58bffe37
+2023/01/30 11:39:11 [804367] cd+++++++++ .git/objects/91/
+2023/01/30 11:39:11 [804367] >f+++++++++ .git/objects/91/efd7f071ab5fd7087ab756874727df260f0434
+2023/01/30 11:39:11 [804367] .d..t...... .git/objects/db/
+2023/01/30 11:39:11 [804367] >f+++++++++ .git/objects/db/21f58a33a27fe958659f905dc0efc7fc04dd6d
+2023/01/30 11:39:11 [804367] cd+++++++++ .git/objects/fa/
+2023/01/30 11:39:11 [804367] >f+++++++++ .git/objects/fa/a75925ca99f775fe24dc48ebf6907df23ed1f9
+2023/01/30 11:39:11 [804367] .d..t...... linux-and-bash/
+2023/01/30 11:39:11 [804367] >fcst...... linux-and-bash/a-ip-info.sh
+2023/01/30 11:39:11 [804367] >fcst...... linux-and-bash/b-analyzer-apache-log.sh
+2023/01/30 11:39:11 [804367] >fcst...... linux-and-bash/c-backup-2023-Jan-30.log
+2023/01/30 11:39:11 [804367] >fcst...... linux-and-bash/readme.md
+2023/01/30 11:39:11 [804367] .d..t...... linux-and-bash/images/
+2023/01/30 11:39:11 [804367] >fcstp..... linux-and-bash/images/image-a.1.png
+2023/01/30 11:39:11 [804367] >fcstp..... linux-and-bash/images/image-a.2.png
+2023/01/30 11:39:11 [804367] *deleting   linux-and-bash/images/image-b.2.png
+2023/01/30 11:39:11 [804367] *deleting   linux-and-bash/images/image-b.1.png
+2023/01/30 11:39:11 [804367] sent 348,254 bytes  received 383 bytes  697,274.00 bytes/sec
+2023/01/30 11:39:11 [804367] total size is 9,782,688  speedup is 28.06

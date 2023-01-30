@@ -1,0 +1,43 @@
+1. From which ip were the most requests?
+Numbers of requests and IP address
+     29 94.78.95.154
+
+2. What is the most requested page? 
+Number of requests and page
+     59 "https://www.google.ru/"
+
+3. How many requests were there from each ip? 
+Numbers of requests per ip
+     29 - 94.78.95.154
+     21 - 95.31.14.165
+     19 - 176.108.5.105
+     16 - 31.7.230.210
+     14 - 144.76.76.115
+     12 - 217.69.133.239
+     11 - 66.102.9.35
+     11 - 5.255.251.28
+     11 - 217.69.133.234
+     11 - 188.123.232.29
+
+4. What non-existent pages were clients referred to? 
+Requests with code 404 - indicates a missing resource
+/wp-content/themes/cassia/css/fonts/flexslider-icon.woff
+
+5. What time did site get the most requests?
+Most at: 
+      4 [25/Apr/2017:11:40:56+0400]
+      3 [25/Apr/2017:11:46:41+0400]
+      2 [25/Apr/2017:13:10:45+0400]
+
+6. What search bots have accessed the site? (IP + UA)
+Results: 
+     14 144.76.76.115 "Mozilla/5.0 (compatible; http://mj12bot.com/)" 
+     12 217.69.133.239 "Mozilla/5.0 (compatible; x86_64; Mail.RU_Bot/2.0;
+     11 5.255.251.28 "Mozilla/5.0 (compatible; +http://yandex.com/bots)" 
+     11 217.69.133.234 "Mozilla/5.0 (compatible; x86_64; Mail.RU_Bot/2.0;
+     10 91.121.209.185 "SentiBot www.sentibot.eu with Googlebot)"
+      9 5.135.154.105 "SentiBot www.sentibot.eu with Googlebot)"
+      9 217.69.133.236 "Mozilla/5.0 (compatible; x86_64; Mail.RU_Bot/2.0;
+      8 217.69.133.235 "Mozilla/5.0 (compatible; x86_64; Mail.RU_Bot/2.0;
+      6 66.249.66.204 "Mozilla/5.0 (compatible; +http://www.google.com/bot.html)" 
+      6 217.69.134.12 "Mozilla/5.0 (compatible; x86_64; Mail.RU_Bot/Fast/2.0;
