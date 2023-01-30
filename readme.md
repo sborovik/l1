@@ -6,6 +6,5 @@
 - [x] [Database Administration](/databases/readme.md) 
 - [x] [Networks using Linux](/networking/readme.md) 
 - [ ] Virtualization and Cloud Basic (Azure) 
-- [ ] [Virtualization and Cloud Basic (AWS)](/aws/) 
+- [ ] [Virtualization and Cloud Basic (AWS)](/aws/readme.md) 
 - [ ] [Final project](/project/) 
-
