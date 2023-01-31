@@ -22,3 +22,13 @@ Create files on disk
 7. Launch and configure a WordPress instance
 ![lunch instance](/aws/images/aws-10.png)
 ![configure](/aws/images/aws-11.png)
+
+8. Review the 10-minute Store and Retrieve a File. Repeat, creating your own repository.
+![S3](/aws/images/aws-12.png)
+![S3](/aws/images/aws-13.png)
+![S3](/aws/images/aws-14.png)
+![S3](/aws/images/aws-15.png)
+
+9. Review the 10-minute exampleDeploy Docker Containers onAmazon Elastic Container Service (Amazon  ECS). Repeat,  create  a  cluster,  and  run  the  online  demo  applicationor  better  otherapplicationwith custom settings.
+![ECS](/aws/images/aws-16.png)
+![ECS](/aws/images/aws-17.png)
