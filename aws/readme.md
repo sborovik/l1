@@ -32,3 +32,9 @@ Create files on disk
 9. Review the 10-minute exampleDeploy Docker Containers onAmazon Elastic Container Service (Amazon  ECS). Repeat,  create  a  cluster,  and  run  the  online  demo  applicationor  better  otherapplicationwith custom settings.
 ![ECS](/aws/images/aws-16.png)
 ![ECS](/aws/images/aws-17.png)
+
+10. Run a Serverless "Hello, World!"with AWS Lambda.
+![Lambda](/aws/images/aws-18.png)
+
+11. Create a static website on Amazon S3, publicly available(link1or link2-using a custom domain registered  withRoute  53). Post  on  the  page  your  own  photo,  the  name  of  the  educational program (EPAM Cloud&DevOps  Fundamentals  Autumn  2022),the list  of  AWS  services  with which the student worked within the educational program or earlierand the full list with links of completed labs (based on tutorialsor qwiklabs). Provide the link to the websitein your reportand СV.
+[http://serhii.b.s3-website-us-east-1.amazonaws.com/](http://serhii.b.s3-website-us-east-1.amazonaws.com/)
