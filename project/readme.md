@@ -1,2 +1,2 @@
 # Final project 
-[ ] in progress 
+- [ ] in progress 
