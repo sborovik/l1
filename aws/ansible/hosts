@@ -9,3 +9,6 @@ ip-172-31-61-142.ec2.internal	ansible_host=52.90.23.4		ansible_user=ubuntu	ansib
 master
 job
 
+[oci]
+ubuntu-instance-0 ansible_host=140.238.218.134	ansible_user=ubuntu	ansible_ssh_private_key_file=/Users/serg/.ssh/serg_oracle_matrix
+ubuntu-instance-1 ansible_host=140.238.218.75	ansible_user=ubuntu	ansible_ssh_private_key_file=/Users/serg/.ssh/serg_oracle_matrix
