@@ -6,3 +6,10 @@ tmp/
 l1.code-workspace
 .vscode/
 todo.md
+terraform/.terraform/providers/registry.terraform.io/hashicorp/oci/4.107.0/darwin_amd64/CHANGELOG.md
+terraform/.terraform/providers/registry.terraform.io/hashicorp/oci/4.107.0/darwin_amd64/LICENSE.md
+terraform/.terraform/providers/registry.terraform.io/hashicorp/oci/4.107.0/darwin_amd64/README.md
+terraform/.terraform/providers/registry.terraform.io/hashicorp/oci/4.107.0/darwin_amd64/terraform-provider-oci_v4.107.0
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate.backup
+terraform/terraform.tfstate
