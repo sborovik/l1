@@ -10,8 +10,7 @@ resource "aws_key_pair" "l1" {
 }
 
 resource "aws_instance" "l1" {
-  count = 2
-
+  count = 3
   ami           = "ami-0557a15b87f6559cf"
   instance_type = "t2.micro"
   tags = {
@@ -19,10 +18,20 @@ resource "aws_instance" "l1" {
   }
 }
 
-output "instance_ips" {
-  value = ["${aws_instance.l1.*.public_ip}"]
+# output "instance_ips" {
+#   value = ["${aws_instance.l1.*.public_ip}"]
+# }
+
+output "instance_ips_and_names" {
+  value = [
+    for i in aws_instance.l1: [
+      i.public_ip,
+      i.tags.Name
+    ]
+  ]
 }
 
+#terraform plan -var-file=var.tfvars
 variable "access_key" {
   type = string
 }

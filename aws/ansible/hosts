@@ -1,13 +1,20 @@
 [job]
-ip-172-31-49-165.ec2.internal	ansible_host=100.25.155.124	ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/serg-aws-wj8j7j.pem
-ip-172-31-56-255.ec2.internal	ansible_host=54.237.226.38	ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/serg-aws-wj8j7j.pem
+jenkins     ansible_host=54.175.222.245	ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/id_rsa
+
+[stage]
+www-stage   ansible_host=52.204.74.74	ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/id_rsa
 
 [master]
-ip-172-31-61-142.ec2.internal	ansible_host=52.90.23.4		ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/serg-aws-wj8j7j.pem
+www-prod	ansible_host=100.27.12.255	ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/id_rsa
 
 [aws:children]
-master
 job
+stage
+master
+
+[www:children]
+stage
+master
 
 [oci]
 ubuntu-instance-0 ansible_host=140.238.218.134	ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/serg_oracle_matrix

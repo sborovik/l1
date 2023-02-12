@@ -1,10 +1,15 @@
 ---
-- hosts: master 
+- hosts: jenkins
   remote_user: ubuntu
-  become: true
-  vars:
-    def_container_name: docker
-    def_container_image: ubuntu
-    def_container_command: sleep 1d
+  become: yes
   tasks:
-    - name: install dependencies
+
+  - name: Ensure jenkins directory on docker host
+    file:
+      state: directory
+      owner: 1000
+      group: 1000
+      path: /share/jenkins
+
+  - name: Deploy Jenkins container
+    command: docker run -d -p 8080:8080 -p 50000:50000 -v /share/jenkins:/var/jenkins_home --name jenkins jenkins/jenkins:lts
