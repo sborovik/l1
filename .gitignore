@@ -1,7 +1,7 @@
 .gitignore
 mikrotik.md
 mikrotik/
-aws/ansible/.ssh/serg-aws-wj8j7j.pem
+aws/ansible/.ssh/
 tmp/
 l1.code-workspace
 .vscode/

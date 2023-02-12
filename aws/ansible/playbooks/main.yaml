@@ -2,11 +2,6 @@
 - hosts: all
   remote_user: ubuntu
   become: true
-  vars:
-    container_count: 2
-    def_container_name: docker
-    def_container_image: ubuntu
-    def_container_command: sleep 1d
   tasks:
     - name: install dependencies
       apt:
@@ -63,14 +58,3 @@
     - name: Install Docker Module for Python
       pip:
         name: docker
-    - name: Pull default Docker image
-      community.docker.docker_image:
-        name: "{{ def_container_image }}"
-        source: pull
-    - name: Create default containers
-      community.docker.docker_container:
-        name: "{{ def_container_name }}{{ item }}"
-        image: "{{ def_container_image }}"
-        command: "{{ def_container_command }}"
-        state: present
-      with_sequence: count={{ container_count }}
