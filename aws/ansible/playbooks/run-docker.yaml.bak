@@ -1,0 +1,24 @@
+---
+- hosts: all
+  remote_user: ubuntu
+  become: true
+  vars:
+    container_count: 1
+    def_container_name: web-httpd
+    def_container_image: httpd
+    #def_container_command: sleep 1d
+  tasks:
+    - name: Pull default Docker image
+      community.docker.docker_image:
+        name: "{{ def_container_image }}"
+        source: pull
+    - name: Create default containers
+      community.docker.docker_container:
+        name: "{{ def_container_name }}-{{ item }}"
+        image: "{{ def_container_image }}:latest"
+        #command: "{{ def_container_command }}"
+        ports:
+          - "8080:80"
+        state: started
+      with_sequence: count={{ container_count }}
+
