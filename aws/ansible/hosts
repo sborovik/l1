@@ -9,7 +9,7 @@ www-prod	ansible_host=100.27.12.255	#ansible_user=ubuntu	ansible_ssh_private_key
 
 [www:children]
 stage
-master
+prod
 
 [oci]
 ubuntu-instance-0 ansible_host=140.238.218.134	ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/serg_oracle_matrix
