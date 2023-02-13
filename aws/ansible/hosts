@@ -1,16 +1,11 @@
 [job]
-jenkins     ansible_host=54.175.222.245	ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/id_rsa
+jenkins     ansible_host=54.175.222.245 
 
 [stage]
 www-stage   ansible_host=52.204.74.74	ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/id_rsa
 
 [master]
 www-prod	ansible_host=100.27.12.255	ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/id_rsa
-
-[aws:children]
-job
-stage
-master
 
 [www:children]
 stage
@@ -19,4 +14,3 @@ master
 [oci]
 ubuntu-instance-0 ansible_host=140.238.218.134	ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/serg_oracle_matrix
 ubuntu-instance-1 ansible_host=140.238.218.75	ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/serg_oracle_matrix
-
