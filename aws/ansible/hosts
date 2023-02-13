@@ -2,10 +2,10 @@
 jenkins     ansible_host=54.175.222.245 
 
 [stage]
-www-stage   ansible_host=52.204.74.74	ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/id_rsa
+www-stage   ansible_host=52.204.74.74	#ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/id_rsa
 
 [master]
-www-prod	ansible_host=100.27.12.255	ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/id_rsa
+www-prod	ansible_host=100.27.12.255	#ansible_user=ubuntu	ansible_ssh_private_key_file=.ssh/id_rsa
 
 [www:children]
 stage
