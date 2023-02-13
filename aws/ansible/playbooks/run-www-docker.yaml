@@ -12,11 +12,11 @@
       group: root
       mode: 0644
 
-  - name: Add date and time to index.html
-    lineinfile:
-      dest: /www/index.html
-      insertafter: "<p id='timestamp'>"
-      line: "<p style='position:absolute; bottom:0px;'>Last updated: {{ ansible_date_time.iso8601 }}</p>"  
+  # - name: Add date and time to index.html
+  #   lineinfile:
+  #     dest: /www/index.html
+  #     insertafter: "<p id='timestamp'>"
+  #     line: "<p style='position:absolute; bottom:0px;'>Last updated: {{ ansible_date_time.iso8601 }}</p>"  
 
   - name: Run Docker Container
     docker_container:
