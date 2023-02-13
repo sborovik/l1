@@ -3,13 +3,36 @@
   remote_user: ubuntu
   become: yes
   tasks:
+  - name: Update APT package manager repositories cache
+    apt:
+      update_cache: yes
+  
+  - name: Install dependencies
+    apt:
+      name: "{{item}}"
+      state: present
+      update_cache: yes
+    loop:
+      - openjdk-11-jre-headless
+      - ansible
 
-  - name: Ensure jenkins directory on docker host
-    file:
-      state: directory
-      owner: 1000
-      group: 1000
-      path: /share/jenkins
+  - name: ensure the jenkins apt repository key is installed
+    apt_key: url=https://pkg.jenkins.io/debian-stable/jenkins.io.key state=present
+  
+  - name: ensure the repository is configured
+    apt_repository: repo='deb https://pkg.jenkins.io/debian-stable binary/' state=present
+  
 
-  - name: Deploy Jenkins container
-    command: docker run -d -p 8080:8080 -p 50000:50000 -v /share/jenkins:/var/jenkins_home --name jenkins jenkins/jenkins:lts
+  - name: ensure jenkins is running
+    service: name=jenkins state=started
+
+
+  # - name: Ensure jenkins directory on docker host
+  #   file:
+  #     state: directory
+  #     owner: 1000
+  #     group: 1000
+  #     path: /share/jenkins
+
+  # - name: Deploy Jenkins container
+  #   command: docker run -d -p 8080:8080 -p 50000:50000 -v /share/jenkins:/var/jenkins_home --name jenkins jenkins/jenkins:lts
