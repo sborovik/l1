@@ -2,12 +2,12 @@
 ## Personal site develpment 
 
 ####
-- local git, terraform 
-- AWS cloud provider 
+- local git, [terraform](/terraform-aws/)
+- AWS cloud [provider](/terraform-aws/provider.tf)
 - 3 nodes 
-    - jenkins, ansible
-    - stage       
-    - production 
+    - [jenkins](/aws/ansible/playbooks/jenkins.yaml), [ansible](/aws/ansible/)
+    - [stage](/aws/ansible/hosts)
+    - [production](/aws/ansible/hosts)
 
 
 ### Terraform init infrastructure 
@@ -27,6 +27,9 @@
 
 ### Stage server after changes 
 ![stage](pictures/6.stage.png)
+
+### Prod before jenkins deploy
+![prod](/project/pictures/0.1.prod.png)
 
 ### Merge stage branch to master 
 ![stage](pictures/7.merge.png)
