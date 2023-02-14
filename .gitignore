@@ -18,3 +18,4 @@ terraform-aws/terraform.tfstate.backup
 terraform-aws/.terraform.lock.hcl
 aws/ansible/ansible.log
 terraform-aws/var.tfvars
+aws/ansible/hosts
