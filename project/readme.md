@@ -1,6 +1,15 @@
 # Final project 
 ## Personal site develpment 
 
+####
+- local git, terraform 
+- AWS cloud provider 
+- 3 nodes 
+    - jenkins, ansible
+    - stage       
+    - production 
+
+
 ### Terraform init infrastructure 
 ![terraform](pictures/1.terraform.png)
 
