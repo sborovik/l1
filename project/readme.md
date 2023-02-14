@@ -13,7 +13,7 @@
 ### Terraform init infrastructure 
 ![terraform](pictures/1.terraform.png)
 
-### Configure Jenkins for CD 
+### Configure Jenkins for CI/CD 
 ![jenkins](pictures/2.jenkins.png)
 
 ### Stage server before changes 
