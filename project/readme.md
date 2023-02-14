@@ -2,7 +2,7 @@
 ## Personal site develpment 
 
 ####
-- local git, [terraform](/terraform-aws/)
+- local git, terraform
 - AWS cloud [provider](/terraform-aws/provider.tf)
 - 3 nodes 
     - [jenkins](/aws/ansible/playbooks/jenkins.yaml), [ansible](/aws/ansible/)
