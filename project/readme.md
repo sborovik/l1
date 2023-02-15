@@ -39,3 +39,9 @@
 
 ### Results on the prod server
 ![prod](pictures/0.prod.png)
+
+### Backup at Oracle Cloud Infrastructure
+[stage](http://140.238.218.134/)
+
+[prod](http://140.238.218.75/)
+

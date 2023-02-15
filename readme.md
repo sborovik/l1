@@ -7,4 +7,4 @@
 - [x] [Networks using Linux](/networking/readme.md) 
 - [ ] Virtualization and Cloud Basic (Azure) 
 - [x] [Virtualization and Cloud Basic (AWS)](/aws/readme.md) 
-- [ ] [Final project](/project/readme.md) 
+- [x] [Final project](/project/readme.md) 
