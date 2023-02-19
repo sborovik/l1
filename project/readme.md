@@ -1,12 +1,5 @@
 # Final project 
-## Personal business card website development CI/CD  
-
-### Presentation 
-- [Google slides](https://docs.google.com/presentation/d/e/2PACX-1vQ1CLY_mlVwF7t53XNbO9k4x7KxBu8flZYvmjOckAu1gkwj-MR4qOvb9bs07m2fjE06TbszMheMR5gZ/pub?start=false&loop=false) 
-- [pdf](final-project.pdf)
-
-
-#### Project description
+## Personal site develpment 
 
 ####
 - local git, terraform
