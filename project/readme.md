@@ -3,7 +3,7 @@
 
 ### Presentation 
 - [Google slides](https://docs.google.com/presentation/d/e/2PACX-1vQ1CLY_mlVwF7t53XNbO9k4x7KxBu8flZYvmjOckAu1gkwj-MR4qOvb9bs07m2fjE06TbszMheMR5gZ/pub?start=false&loop=false) 
-- [pdf file](final-project.pdf)
+- [pdf](final-project.pdf)
 
 
 #### Project description
