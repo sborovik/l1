@@ -1,0 +1,2 @@
+ansible_ssh_private_key_file: /home/serg/.ssh/serg_oracle_matrix
+ansible_user: ubuntu
